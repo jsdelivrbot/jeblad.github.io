@@ -2,7 +2,7 @@
 layout: page
 title: "About"
 menu: About
-description: ""
+description: "This is some descriptiove text about 'About'"
 ---
 {% include JB/setup %}
 

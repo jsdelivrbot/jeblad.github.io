@@ -18,7 +18,7 @@ author :
   feedburner : feedname
 
 #Theme
-theme: jekyll-theme-slate
+theme: jekyll-theme-materialdocs
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

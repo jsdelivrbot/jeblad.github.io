@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-menu: Custom Menu Text
+menu: About
 description: ""
 ---
 {% include JB/setup %}

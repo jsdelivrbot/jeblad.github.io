@@ -25,10 +25,12 @@ If we assume there is a kind of reference grid overlaid the receptive field, the
 Let the positional inputs be $p_i(t)$ with weights $w_i$, and the signal inputs be $x_j(t)$ with weights $v_j$, then the output $y_j$ will be
 
 $$
-y_j = \operatorname{q} \left ( \delta_{j-1}, v_j \int_t^{t+\Delta t} x_j(t)\, dt + \sum_i \left ( w_i \int_t^{t+\Delta t} p_i(t)\, dt \right ) \right )
+\begin{equation}
+y_j = \operatorname{q} \left ( t, v_j \int_{t}^{t+\Delta t} x_j(t)\, dt + \sum_i \left ( w_i \int_{t}^{t+\Delta t} p_i(t)\, dt \right ) \right )
+\end{equation}
 $$
 
-where $\operatorname{q}$ is some spiking transferfunction, that somehow maintain a previous state $\delta_{j-1}$. This can also be modeled as differential equations.
+where $\operatorname{q}$ is some spiking transferfunction, that somehow resets the variable $t$ when the transferfunction has spiked and thus restarts integration over a new interval. This can also be modeled as a set of differential equations, but this is a computational harder implementation.
 
 The spike will arrive sooner when the signal is high and later when the signal is low. Likewise, it will arise sooner when the grid is high and later when the grid is low. At the same time the spike can be assumed to reset the cycle, even if there are no input signal the grid will still generate a background spike chatter. Still note that this is not a strictly linear representation, it is a good bit of randomness in the spiking behavior.
 

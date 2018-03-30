@@ -8,17 +8,50 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
-author :
-  name : John Erling Blad
-  email : jeblad@gmail.com
-  github : jeblad
-  twitter : jeblad
-  feedburner : feedname
+title : Jeblad
+tagline: Rants galore
+authors :
+  jeblad:
+    name : John Erling Blad
+    email : jeblad@gmail.com
+    github : jeblad
+    twitter : jeblad
+    keybase : jeblad
+    linkedin : jeblad
+    wikimedia : jeblad
+    feedburner : feedname
 
-#Theme
+licenses :
+  cc-by :
+    short: CC by 4.0
+    title : Creative Commons by Attribution 4.0 International
+    url : https://creativecommons.org/licenses/by/4.0/
+  cc-by-sa : 
+    short : CC by-sa 4.0
+    title : Creative Commons by Attribution-ShareAlike 4.0 International
+    url : https://creativecommons.org/licenses/by-sa/4.0/
+  cc-by-nd : 
+    short : CC by-nd 4.0
+    title : Creative Commons by Attribution-NoDerivatives 4.0 International
+    url : https://creativecommons.org/licenses/by-nd/4.0/
+  cc-by-nc : 
+    short : CC by-nc 4.0
+    title : Creative Commons by Attribution-NonCommercial 4.0 International
+    url : https://creativecommons.org/licenses/by-nc/4.0/
+  cc-by-nc-sa : 
+    short : CC by-nc-sa 4.0
+    title : Creative Commons by Attribution-NonCommercial-ShareAlike 4.0 International
+    url : https://creativecommons.org/licenses/by-nc-sa/4.0/
+  cc-by-nc-nd : 
+    short : CC by-nc-nd 4.0
+    title : Creative Commons by Attribution-NonCommercial-NoDerivatives 4.0 International
+    url : https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+# Theme
 theme: jekyll-materialdocs
+
+# Processor
+#markdown: maruku
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

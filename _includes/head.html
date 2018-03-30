@@ -24,9 +24,10 @@
 }
 .parent{
   font-weight: bold;
+  padding: 16px 40px 16px 50px !important;
 }
 .child{
-  padding: 5px 40px 5px 60px !important;
+  padding: 5px 40px 5px 70px !important;
 }
 .is-active{
   background-color: #e0e0e0;
@@ -105,4 +106,74 @@ footer{
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+.mdl-navigation a.parent {
+	background-position: center left 20px;
+	background-repeat: no-repeat;
+	background-size: 28px 28px;
+}
+.mdl-navigation a[data-slug=home] { background-image: url(/assets/icons/home.svg); }
+.mdl-navigation a.is-active[data-slug=home] { background-image: url(/assets/icons/home-active.svg); }
+.mdl-navigation a[data-slug=tags] { background-image: url(/assets/icons/tag.svg); }
+.mdl-navigation a.is-active[data-slug=tags] { background-image: url(/assets/icons/tag-active.svg); }
+.mdl-navigation a[data-slug=feed] { background-image: url(/assets/icons/feed.svg); }
+.mdl-navigation a.is-active[data-slug=feed] { background-image: url(/assets/icons/feed-active.svg); }
+.mdl-navigation a[data-slug=about] { background-image: url(/assets/icons/about.svg); }
+.mdl-navigation a.is-active[data-slug=about] { background-image: url(/assets/icons/about-active.svg); }
+.mdl-navigation a[data-slug=pages] { background-image: url(/assets/icons/pages.svg); }
+.mdl-navigation a.is-active[data-slug=pages] { background-image: url(/assets/icons/pages-active.svg); }
+.mdl-navigation a[data-slug=archive] { background-image: url(/assets/icons/archive.svg); }
+.mdl-navigation a.is-active[data-slug=archive] { background-image: url(/assets/icons/archive-active.svg); }
+.mdl-navigation a[data-slug=categories] { background-image: url(/assets/icons/categories.svg); }
+.mdl-navigation a.is-active[data-slug=categories] { background-image: url(/assets/icons/categories-active.svg); }
+.mdl-navigation a[data-slug=indent] {
+	background-image: url(/assets/icons/child.svg);
+	background-position: center left 38px;
+	background-repeat: no-repeat;
+	background-size: 28px 28px;
+}
+.mdl-navigation a.is-active[data-slug=indent] { background-image: url(/assets/icons/child-active.svg); }
+#site-title {
+	background-image: url(/assets/icons/logo.svg);
+	background-position: center left 0px;
+	background-repeat: no-repeat;
+	background-size: 52px 52px;
+	padding-left: 52px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.mdl-layout__drawer > .mdl-layout-title {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+.byline .author:after {
+	content: ",";
+}
+.byline .author:last-of-type:after {
+	content: "";
+}
+.byline .author + .author:last-of-type:before {
+	content: " and ";
+}
+.sources {
+	float: right;
+}
+.source a {
+	padding-left: 24px;
+	background-image: url(/assets/icons/cloud.svg);
+	background-position: center left;
+	background-repeat: no-repeat;
+	background-size: 22px 22px;
+}
+.source a[href*="github"] {
+	padding-left: 24px;
+	background-image: url(/assets/icons/github.svg);
+	background-size: 16px 16px;
+}
+.source a[href$=".pdf"] {
+	padding-left: 24px;
+	background-image: url(/assets/icons/pdf.svg);
+}
 </style>
+{% if page.use_math %}
+{% include mathjax_support %}
+{% endif %}

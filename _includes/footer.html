@@ -1,1 +1,2 @@
-<p id="copyright">&copy; {{ site.time | date: '%Y' }} {% if site.copyright %}{{ site.copyright }}{% else %}{{ site.title }}{% endif %}</p>
+{% assign license = site.licenses[ page.license ] %}
+<p id="copyright">&copy; {{ site.time | date: '%Y' }} {% if site.copyright %}{{ site.copyright }}{% else %}{{ site.title }}{% endif %} {% if license %}/ <a href="{{ license.url }}" title="{{ license.title }}">{{ license.short }}</a>{% endif %}</p>

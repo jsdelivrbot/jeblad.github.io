@@ -1,0 +1,14 @@
+<div class="page-header">
+<h1>
+{% if post.title %}
+    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a> {% if post.tagline %}<br><small>{{post.tagline}}</small>{% endif %}
+{% endif %}
+</h1>
+<p class="byline">
+  by {{ author.name }} {% if author.email %}<a href="mailto:">&lt;{{ author.email }}&gt;</a>{% endif %}
+</p>
+</div>
+<div class="date">
+  <span>{{ post.date | date_to_long_string }}</span>
+</div>
+<div class="content">{{ content }}</div>

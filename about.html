@@ -1,0 +1,37 @@
+---
+layout: page
+title: About the authors
+menu: About
+weight: 100
+tagline: who wrote the shit
+description: This is some descriptive text about 'About'
+category: pages
+tags: [about]
+---
+{% include JB/setup %}
+
+This site is devoted to various topics that the author(s) find interesting. Most of the articles should be fairly easy reading, while the more lengthy articles might be more demanding. The various articles should have a byline where at least the main author is listed.
+
+<dl>
+{% for author in site.authors %}
+  <dt>{{ author[1].name }}</dt>
+  {% if author[1].email %}
+  <dd>Email: <a href="mailto:{{author[1].email}}">{{ author[1].email }}</a></dd>
+  {% endif %}
+  {% if author[1].github %}
+  <dd>Github: <a href="https://github.com/{{author[1].github}}">{{ author[1].github }}</a></dd>
+  {% endif %}
+  {% if author[1].twitter %}
+  <dd>Twitter: <a href="https://twitter.com/{{author[1].twitter}}">{{ author[1].twitter }}</a></dd>
+  {% endif %}
+  {% if author[1].keybase %}
+  <dd>Keybase: <a href="https://keybase.io/{{author[1].keybase}}">{{ author[1].keybase }}</a></dd>
+  {% endif %}
+  {% if author[1].linkedin %}
+  <dd>Linkedin: <a href="https://www.linkedin.com/in/{{author[1].wikimedia}}">{{ author[1].linkedin }}</a></dd>
+  {% endif %}
+  {% if author[1].wikimedia %}
+  <dd>Wikimedia: <a href="https://meta.wikimedia.org/wiki/user:{{author[1].wikimedia}}">{{ author[1].wikimedia }}</a></dd>
+  {% endif %}
+{% endfor %}
+</dl>

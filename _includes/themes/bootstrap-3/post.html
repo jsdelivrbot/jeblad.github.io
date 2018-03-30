@@ -1,10 +1,6 @@
 <div class="page-header">
   <h1>{{ page.title }} {% if page.tagline %}<br><small>{{page.tagline}}</small>{% endif %}</h1>
-  <p class="sources">
-	{% for source in page.sources %}
-      <span class="source"><a href="{{ source[1] }}">{{source[0]}}</a></span>
-    {% endfor %}
-  </p>
+  {% include JB/sources %}
   <p class="byline">by
     {% for author in page.authors %}
       {% if site.authors[author] %}

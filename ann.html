@@ -1,0 +1,16 @@
+---
+layout: page
+title: Artificial Neural Networks
+menu: Neural nets
+weight: 10
+header: Posts By Category
+unwind: neural nets
+parent: categories.html
+---
+{% include JB/setup %}
+
+<ul class="posts">
+  {% for post in site.categories[page.unwind] %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}"><strong>{{ post.title }}</strong></a> – <em>{{ post.tagline }}</em><br>{{post.description}}</li>
+  {% endfor %}
+</ul>

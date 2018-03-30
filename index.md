@@ -8,9 +8,10 @@ weight: 0
 ---
 {% include JB/setup %}
 
-<div class="blog-index">  
+<div class="blog-index">
   {% assign post = site.posts.first %}
   {% assign content = post.content %}
+  {% assign sources = post.sources %}
   {% assign author = site.authors[post.author] %}
   {% include post_detail.html %}
 </div>

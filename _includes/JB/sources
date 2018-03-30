@@ -1,5 +1,5 @@
 <ul class="sources">
-	{% for source in page.sources %}
+	{% for source in sources %}
 		<li class="source"><a href="{{ source[1] }}">{{source[0]}}</a></li>
 	{% endfor %}
 </ul>

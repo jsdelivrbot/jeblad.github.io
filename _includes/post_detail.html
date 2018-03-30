@@ -4,6 +4,7 @@
     <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a> {% if post.tagline %}<br><small>{{post.tagline}}</small>{% endif %}
 {% endif %}
 </h1>
+{% include JB/sources %}
 <p class="byline">
   by {{ author.name }} {% if author.email %}<a href="mailto:">&lt;{{ author.email }}&gt;</a>{% endif %}
 </p>

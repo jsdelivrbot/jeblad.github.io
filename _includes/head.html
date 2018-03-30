@@ -156,22 +156,24 @@ footer{
 }
 .sources {
 	float: right;
+	list-style-type: none;
 }
 .source a {
 	padding-left: 24px;
 	background-image: url(/assets/icons/cloud.svg);
-	background-position: center left;
+	background-position: left center;
 	background-repeat: no-repeat;
 	background-size: 22px 22px;
 }
 .source a[href*="github"] {
-	padding-left: 24px;
 	background-image: url(/assets/icons/github.svg);
 	background-size: 16px 16px;
+	background-position: 2px center;
 }
 .source a[href$=".pdf"] {
-	padding-left: 24px;
 	background-image: url(/assets/icons/pdf.svg);
+	background-size: 22px 22px;
+	background-position: 0px center;
 }
 </style>
 {% if page.use_math %}

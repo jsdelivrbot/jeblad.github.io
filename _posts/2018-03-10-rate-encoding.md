@@ -2,8 +2,8 @@
 layout: post
 category : neural nets
 title: Rate Encoded Location
-tagline: place encode like a brain
-tags : [place encoding, rate encoding]
+tagline: placecode like a brain
+tags : [place encode, rate encode]
 description: An outline of the basic idea about rate encoded locations, why it is important, how it might be done in parts of the brain, and how to approximate the same behavior in an artificial neural network.
 authors: [jeblad]
 sources: [ ["This link does not work", "https://github.com/jeblad/brain/some-place/some-place-deep.pdf"], ["This link does not work", "https://github.com/jeblad/brain/some-place/some-other-place/"] ]

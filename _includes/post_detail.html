@@ -5,9 +5,7 @@
 {% endif %}
 </h1>
 {% include JB/sources %}
-<p class="byline">
-  by {{ author.name }} {% if author.email %}<a href="mailto:">&lt;{{ author.email }}&gt;</a>{% endif %}
-</p>
+{% include JB/authors %}
 </div>
 <div class="date">
   <span>{{ post.date | date_to_long_string }}</span>

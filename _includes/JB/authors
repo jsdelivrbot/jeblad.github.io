@@ -1,0 +1,10 @@
+
+<ul class="byline authors">
+	{% for author in authors %}
+		{% if site.authors[author] %}
+			<li class="author">{{ site.authors[author].name }}{% if site.authors[author].email %} <a href="mailto:{{site.authors[author].email}}">&lt;{{ site.authors[author].email }}&gt;</a>{% endif %}</li>
+		{% else %}
+			<li class="author">{{ author }}</li>
+		{% endif %}
+	{% endfor %}
+</ul>

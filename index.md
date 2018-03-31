@@ -12,7 +12,7 @@ weight: 0
   {% assign post = site.posts.first %}
   {% assign content = post.content %}
   {% assign sources = post.sources %}
-  {% assign author = site.authors[post.author] %}
+  {% assign authors = post.authors %}
   {% include post_detail.html %}
 </div>
 

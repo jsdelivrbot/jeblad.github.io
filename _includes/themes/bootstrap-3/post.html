@@ -1,15 +1,7 @@
 <div class="page-header">
   <h1>{{ page.title }} {% if page.tagline %}<br><small>{{page.tagline}}</small>{% endif %}</h1>
   {% include JB/sources %}
-  <p class="byline">by
-    {% for author in page.authors %}
-      {% if site.authors[author] %}
-        <span class="author">{{ site.authors[author].name }}{% if site.authors[author].email %} <a href="mailto:{{site.authors[author].email}}">&lt;{{ site.authors[author].email }}&gt;</a>{% endif %}</span>
-      {% else %}
-        <span class="author">{{ author }}</span>
-      {% endif %}
-    {% endfor %}
-  </p>
+  {% include JB/authors %}
 </div>
 
 <div class="row post-full">
